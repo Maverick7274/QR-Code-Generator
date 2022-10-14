@@ -130,4 +130,7 @@ dmypy.json
 
 # MacOS
 .DS_Store
+
+# Programming language specific files
 *.svg
+*.png

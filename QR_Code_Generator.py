@@ -1,5 +1,6 @@
 import qrcode
 import qrcode.image.svg
+import os
 
 method = "basic"
 
@@ -22,6 +23,6 @@ elif method == 'path':
 img = qrcode.make(data, image_factory = factory)
 
 if(file_type == 'svg'):
-    img.save(name_of_file + '.svg')
+    img.save( "./output/" + name_of_file + '.svg')
 elif(file_type == 'png'):
-    img.save(name_of_file + '.png')
+    img.save( "./output/" + name_of_file + '.png')
